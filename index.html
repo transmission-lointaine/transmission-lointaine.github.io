@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>🌌🌓</title>
+    <script src="loading.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script src="TemplateData/UnityProgress.javascript"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div id="loading"> 
+        <div class="center">
+            <div class="lds-dual-ring"></div>
+        </div>
+    </div>
+    <div class="webgl-content">
+        <div id="gameContainer"></div>
+    </div>
+    <script src="TemplateData/responsive.javascript"></script>
+  </body>
+</html>
